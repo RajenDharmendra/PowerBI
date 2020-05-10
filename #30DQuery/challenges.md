@@ -6,7 +6,7 @@
 - Entity: DimEmployee
 - Instructions:
 
-Select [EmployeeKey], [Gender], [BirthDate] and a new merged [FullName] column which is a concatenation of [FirstName], [MiddleName] and [LastName] with a space separator for all employees with a [BirthDate] in the year 1974.
+Select `EmployeeKey`, `Gender`, `BirthDate` and a new merged `FullName` column which is a concatenation of `FirstName`, `MiddleName` and `LastName` with a space separator for all employees with a `BirthDate` in the year 1974.
 
 ## Day 2
 
@@ -14,7 +14,7 @@ Select [EmployeeKey], [Gender], [BirthDate] and a new merged [FullName] column w
 - Entity: DimReseller, DimGeography
 - Instructions:
 
-Select the [ResellerKey], [BusinessType], [ResellerName], [NumberEmployees], [ProductLine], [AnnualRevenue] and [EnglishCountryRegionName] columns where the [ResellerName] contains Bike or Bicycle and the [CountryRegionCode] is not in DE or GB.
+Select the `ResellerKey`, `BusinessType`, `ResellerName`, `NumberEmployees`, `ProductLine`, `AnnualRevenue` and `EnglishCountryRegionName` columns where the `ResellerName` contains Bike or Bicycle and the `CountryRegionCode` is not in DE or GB.
 
 ## Day 3
 
@@ -22,7 +22,7 @@ Select the [ResellerKey], [BusinessType], [ResellerName], [NumberEmployees], [Pr
 - Entity: DimProduct , FactResellerSales
 - Instructions:
 
-Select the [ProductKey], [EnglishProductName] and an aggregated [TotalRevenue] column which is the sum of a new computed column [TotalUnitPrice] made up of [OrderQuantity] multiplied by [UnitPrice] where the [TotalRevenue] is above one million.
+Select the `ProductKey`, `EnglishProductName` and an aggregated `TotalRevenue` column which is the sum of a new computed column `TotalUnitPrice` made up of `OrderQuantity` multiplied by `UnitPrice` where the `TotalRevenue` is above one million.
 
 ## Day 4
 
@@ -30,7 +30,7 @@ Select the [ProductKey], [EnglishProductName] and an aggregated [TotalRevenue] c
 - Entity: Fact.Order
 - Instructions:
 
-Select [OrderKey] and [Description] where the modulo of the [Description] length divided by 10 is equal to 1.
+Select `OrderKey` and `Description` where the modulo of the `Description` length divided by 10 is equal to 1.
 
 ## Day 5
 
@@ -38,10 +38,10 @@ Select [OrderKey] and [Description] where the modulo of the [Description] length
 - Entity: Dimension.Employee
 - Instructions:
 
-Select the [Employee Key], [Employee], [Is Salesperson], [Valid From] and [Valid To] where the following two conditions are met —
+Select the `Employee Key`, `Employee`, `Is Salesperson`, `Valid From` and `Valid To` where the following two conditions are met —
 
-- [Is Salesperson] is True, the (Valid To] year is not 9999 and the total days between (Valid From] and [Valid To] is greater than 365
-- [Is Salesperson] is False and the [Valid Tol year is 9999
+- `Is Salesperson` is True, the `Valid To` year is not 9999 and the total days between `Valid From` and `Valid To` is greater than 365
+- `Is Salesperson` is False and the `Valid To` year is 9999
 
 ## Day 6
 
@@ -49,7 +49,7 @@ Select the [Employee Key], [Employee], [Is Salesperson], [Valid From] and [Valid
 - Entity: Dimension.Stock Item
 - Instructions:
 
-Select (Stock Item Key), (Stock Item] and [Color] where the (Stock Item Keyl is an even number and the [Color] is not N/A
+Select `Stock Item Key`, `Stock Item` and `Color` where the `Stock Item Key` is an even number and the `Color` is not N/A
 
 ## Day 7
 
@@ -57,7 +57,7 @@ Select (Stock Item Key), (Stock Item] and [Color] where the (Stock Item Keyl is 
 - Entity: DimEmployee
 - Instructions:
 
-Dynamically select all the columns that do not contain the text 'Key'.
+Dynamically select all the columns that do not contain the text `Key`.
 
 ## Day 8
 
@@ -65,7 +65,7 @@ Dynamically select all the columns that do not contain the text 'Key'.
 - Entity: Fact.Sale
 - Instructions:
 
-Select [Sale Key], [Customer Key], [Invoice Date Key], [Total Excluding Tax], [Tax Amount] and [Profit] where the [Invoice Date Key] is equal to the last date of each month.
+Select `Sale Key`, `Customer Key`, `Invoice Date Key`, `Total Excluding Tax`, `Tax Amount` and `Profit` where the `Invoice Date Key` is equal to the last date of each month.
 
 ## Day 9
 
@@ -73,7 +73,7 @@ Select [Sale Key], [Customer Key], [Invoice Date Key], [Total Excluding Tax], [T
 - Entity: DimCustomer , FactlnternetSales
 - Instructions:
 
-Select [Gender], [EnglishEducation] and pivot the sum of [OrderQuantity] for [CommuteDistance]. Sort the [EnglishEducation] from the lowest education level to the highest and the [Gender] column in ascending order. Re-order the [CommuteDistance] columns from the shortest to longest distance.
+Select `Gender`, `EnglishEducation` and pivot the sum of `OrderQuantity` for `CommuteDistance`. Sort the `EnglishEducation` from the lowest education level to the highest and the `Gender` column in ascending order. Re-order the `CommuteDistance` columns from the shortest to longest distance.
 
 ## Day 10
 
