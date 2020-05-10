@@ -2,35 +2,42 @@
 
 ## Day 1
 
-Instructions:
+- Database: AdventureWorksDW2017
+- Entity: DimEmployee
+- Instructions:
+
 Select [EmployeeKey], [Gender], [BirthDate] and a new merged [FullName] column which is a concatenation of [FirstName], [MiddleName] and [LastName] with a space separator for all employees with a [BirthDate] in the year 1974.
 
 ## Day 2
 
-Database: AdventureWorksDW2017
-Entity: DimReseller, DimGeography
-Instructions:
+- Database: AdventureWorksDW2017
+- Entity: DimReseller, DimGeography
+- Instructions:
+
 Select the [ResellerKey], [BusinessType], [ResellerName], [NumberEmployees], [ProductLine], [AnnualRevenue] and [EnglishCountryRegionName] columns where the [ResellerName] contains Bike or Bicycle and the [CountryRegionCode] is not in DE or GB.
 
 ## Day 3
 
-Database: AdventureWorksDW2017
-Entity: DimProduct , FactResellerSales
-Instructions:
+- Database: AdventureWorksDW2017
+- Entity: DimProduct , FactResellerSales
+- Instructions:
+
 Select the [ProductKey], [EnglishProductName] and an aggregated [TotalRevenue] column which is the sum of a new computed column [TotalUnitPrice] made up of [OrderQuantity] multiplied by [UnitPrice] where the [TotalRevenue] is above one million.
 
 ## Day 4
 
-Database: WideWorldImportersDW
-Entity: Fact.Order
-Instructions:
+- Database: WideWorldImportersDW
+- Entity: Fact.Order
+- Instructions:
+
 Select [OrderKey] and [Description] where the modulo of the [Description] length divided by 10 is equal to 1.
 
 ## Day 5
 
-Database: WideWorldImportersDW
-Entity: Dimension.Employee
-Instructions:
+- Database: WideWorldImportersDW
+- Entity: Dimension.Employee
+- Instructions:
+
 Select the [Employee Key], [Employee], [Is Salesperson], [Valid From] and [Valid To] where the following two conditions are met —
 
 - [Is Salesperson] is True, the (Valid To] year is not 9999 and the total days between (Valid From] and [Valid To] is greater than 365
@@ -38,26 +45,35 @@ Select the [Employee Key], [Employee], [Is Salesperson], [Valid From] and [Valid
 
 ## Day 6
 
-Database: WideWorldlmportersDW
-Entity: Dimension.Stock Item
-Instructions:
+- Database: WideWorldlmportersDW
+- Entity: Dimension.Stock Item
+- Instructions:
+
 Select (Stock Item Key), (Stock Item] and [Color] where the (Stock Item Keyl is an even number and the [Color] is not N/A
 
 ## Day 7
 
-Database: AdventureWorksDW2017
-Entity: DimEmployee
-Instructions:
+- Database: AdventureWorksDW2017
+- Entity: DimEmployee
+- Instructions:
+
 Dynamically select all the columns that do not contain the text 'Key'.
 
 ## Day 8
 
-Database: WideWorldlmportersDW
-Entity: Fact.Sale
-Instructions:
+- Database: WideWorldlmportersDW
+- Entity: Fact.Sale
+- Instructions:
+
 Select [Sale Key], [Customer Key], [Invoice Date Key], [Total Excluding Tax], [Tax Amount] and [Profit] where the [Invoice Date Key] is equal to the last date of each month.
 
 ## Day 9
+
+- Database: AdventureWorksDW2017
+- Entity: DimCustomer , FactlnternetSales
+- Instructions:
+
+Select [Gender], [EnglishEducation] and pivot the sum of [OrderQuantity] for [CommuteDistance]. Sort the [EnglishEducation] from the lowest education level to the highest and the [Gender] column in ascending order. Re-order the [CommuteDistance] columns from the shortest to longest distance.
 
 ## Day 10
 
